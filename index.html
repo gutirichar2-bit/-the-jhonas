@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d18">
+  <meta name="description" content="The Jhonas. Conecta conmigo en todas mis redes sociales.">
+  <title>THE JHONAS | Azul ICE</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #080d18;
+      --card: #111c2c;
+      --ice: #70eaff;
+      --ice-light: #d7f9ff;
+      --white: #f4fbff;
+      --muted: #a9bfd4;
+    }
+
+    body {
+      min-height: 100vh;
+      padding: 45px 20px;
+      display: flex;
+      justify-content: center;
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(
+          ellipse at 50% 0%,
+          #102e50 0%,
+          transparent 55%
+        ),
+        var(--bg);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 460px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 23px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--ice);
+      border-radius: 25px;
+      color: var(--ice);
+      font-size: 35px;
+      font-weight: 900;
+      letter-spacing: -3px;
+      transform: rotate(-3deg);
+      background: #70eaff0b;
+      box-shadow:
+        0 0 15px #70eaff35,
+        0 0 40px #70eaff20,
+        inset 0 0 18px #70eaff12;
+    }
+
+    .logo span {
+      transform: rotate(3deg);
+    }
+
+    h1 {
+      font-size: clamp(34px, 9vw, 46px);
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-shadow: 0 0 24px #70eaff20;
+    }
+
+    h1 span {
+      color: var(--ice);
+      text-shadow: 0 0 18px #70eaff55;
+    }
+
+    .subtitle {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .line {
+      width: 55px;
+      height: 4px;
+      margin: 26px auto 30px;
+      border-radius: 10px;
+      background: var(--ice);
+      box-shadow: 0 0 15px #70eaff90;
+    }
+
+    .links {
+      display: grid;
+      gap: 15px;
+    }
+
+    .social {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 17px;
+      color: var(--white);
+      text-align: left;
+      text-decoration: none;
+      background: linear-gradient(135deg, #14243a, #101722);
+      border: 1px solid #70eaff30;
+      border-radius: 18px;
+      box-shadow: 0 5px 20px #00000015;
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+    .social:hover {
+      transform: translateY(-4px);
+      border-color: var(--ice);
+      box-shadow:
+        0 0 18px #70eaff20,
+        0 8px 24px #00000030;
+    }
+
+    .social:focus-visible {
+      outline: 2px solid var(--ice);
+      outline-offset: 4px;
+    }
+
+    .social-icon {
+      width: 49px;
+      height: 49px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      border: 1px solid #70eaff30;
+      border-radius: 15px;
+      background: #70eaff12;
+      color: var(--ice);
+      font-size: 25px;
+      font-weight: 800;
+      text-shadow: 0 0 12px #70eaff50;
+    }
+
+    .details {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .details strong {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+
+    .details small {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .arrow {
+      color: var(--ice);
+      font-size: 24px;
+    }
+
+    .coming {
+      opacity: 0.65;
+      cursor: default;
+    }
+
+    .coming:hover {
+      transform: none;
+      border-color: #70eaff30;
+      box-shadow: 0 5px 20px #00000015;
+    }
+
+    footer {
+      margin-top: 38px;
+      color: #8297ad;
+      font-size: 12px;
+      line-height: 2;
+    }
+
+    footer strong {
+      color: var(--ice);
+      letter-spacing: 2px;
+      text-shadow: 0 0 12px #70eaff35;
+    }
+
+    .tagline {
+      color: var(--ice-light);
+      opacity: 0.75;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .social {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+
+    <div class="logo">
+      <span>TJ.</span>
+    </div>
+
+    <h1>THE <span>JHONAS</span></h1>
+
+    <p class="subtitle">
+      Bienvenido a mi mundo. 🧊<br>
+      Conecta conmigo en mis redes sociales.
+    </p>
+
+    <div class="line"></div>
+
+    <section class="links" aria-label="Mis redes sociales">
+
+      <a
+        class="social"
+        href="https://www.tiktok.com/@jrcabrera_20?_r=1&_t=ZS-9AvbaOEAch3"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visitar mi TikTok"
+      >
+        <div class="social-icon">♪</div>
+        <div class="details">
+          <strong>TikTok</strong>
+          <small>Videos y momentos</small>
+        </div>
+        <span class="arrow">↗</span>
+      </a>
+
+      <a
+        class="social"
+        href="https://www.instagram.com/jhon181220?exln=MTRoaDZoejIwdTlpZQ=="
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visitar mi Instagram"
+      >
+        <div class="social-icon">◎</div>
+        <div class="details">
+          <strong>Instagram</strong>
+          <small>Fotos, historias y más</small>
+        </div>
+        <span class="arrow">↗</span>
+      </a>
+
+      <a
+        class="social"
+        href="https://www.facebook.com/share/19jPrgRkFA/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visitar mi Facebook"
+      >
+        <div class="social-icon">f</div>
+        <div class="details">
+          <strong>Facebook</strong>
+          <small>Conectemos por aquí</small>
+        </div>
+        <span class="arrow">↗</span>
+      </a>
+
+      <div class="social coming" aria-label="YouTube próximamente">
+        <div class="social-icon">▶</div>
+        <div class="details">
+          <strong>YouTube</strong>
+          <small>Próximamente...</small>
+        </div>
+        <span class="arrow">✦</span>
+      </div>
+
+    </section>
+
+    <footer>
+      <strong>THE JHONAS</strong><br>
+      <span class="tagline">ESTILO · ACTITUD · AZUL ICE</span><br>
+      © 2026 · Hecho con estilo.
+    </footer>
+
+  </main>
+</body>
+</html>
